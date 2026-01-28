@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bookmarks Commander – Linux Shortcuts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --accent: #0066cc;
+    --key-bg: #e8ecef;
+    --key-border: #c4ccd4;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 10px 18px;
+    background: var(--bg);
+    font-family: sans-serif;
+    line-height: 1.4;
+    color: #222;
+    font-size: 14px;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  h1 {
+    margin: 0 0 6px;
+    color: var(--accent);
+    font-size: 20px;
+  }
+  p {
+    margin: 0 0 6px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1.1fr;
+    gap: 8px;
+    height: calc(100vh - 6em);
+  }
+  .card {
+    background: #fff;
+    border-radius: 4px;
+    padding: 6px 8px;
+    border: 1px solid #d0d4da;
+    overflow: hidden;
+  }
+  .card h2 {
+    margin: 0 0 4px;
+    font-size: 14px;
+    color: var(--accent);
+    border-bottom: 1px solid #dde1e6;
+    padding-bottom: 2px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  th, td {
+    padding: 2px 3px;
+    vertical-align: top;
+  }
+  th {
+    text-align: left;
+    color: #333;
+    border-bottom: 1px solid #dde1e6;
+  }
+  tr:nth-child(even) td {
+    background: #f7f8fa;
+  }
+  kbd {
+    display: inline-block;
+    background: var(--key-bg);
+    border: 1px solid var(--key-border);
+    border-radius: 3px;
+    padding: 0 4px;
+    margin: 0 1px;
+    font-size: 11px;
+    font-family: monospace;
+    box-shadow: 0 1px 0 var(--key-border);
+  }
+  .small-note {
+    font-size: 11px;
+    color: #555;
+    margin-top: 2px;
+  }
+  ul {
+    padding-left: 14px;
+    margin: 0;
+  }
+  li { margin-bottom: 2px; }
+</style>
+</head>
+<body>
+
+<h1>Bookmarks Commander – Linux Keyboard Reference</h1>
+<p>Toolbar button → commander in a new tab. Left pane starts active; use keys below only (Linux / Ctrl).</p>
+
+<div class="grid">
+  <!-- Column 1 -->
+  <div class="card">
+    <h2>Basic Navigation & Panels</h2>
+    <table>
+      <tr><th style="width:58%">Action</th><th>Shortcut</th></tr>
+      <tr>
+        <td>Open commander</td>
+        <td>Click toolbar button once</td>
+      </tr>
+      <tr>
+        <td>Move up / down in active pane</td>
+        <td><kbd>↑</kbd> / <kbd>↓</kbd></td>
+      </tr>
+      <tr>
+        <td>Open folder / bookmark (same tab)</td>
+        <td><kbd>Enter</kbd> or double‑click</td>
+      </tr>
+      <tr>
+        <td>Open bookmark in background tab</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td>
+      </tr>
+      <tr>
+        <td>Open in background tab (mouse)</td>
+        <td><kbd>Ctrl</kbd> + double‑click</td>
+      </tr>
+      <tr>
+        <td>Jump directly by first letter</td>
+        <td>Type first character repeatedly</td>
+      </tr>
+      <tr>
+        <td>Parent directory (one level up)</td>
+        <td><kbd>Backspace</kbd></td>
+      </tr>
+      <tr>
+        <td>Toggle between left / right panes</td>
+        <td><kbd>Tab</kbd></td>
+      </tr>
+      <tr>
+        <td>Focus left pane</td>
+        <td><kbd>Ctrl</kbd> + <kbd>1</kbd> or <kbd>←</kbd></td>
+      </tr>
+      <tr>
+        <td>Focus right pane</td>
+        <td><kbd>Ctrl</kbd> + <kbd>2</kbd> or <kbd>→</kbd></td>
+      </tr>
+      <tr>
+        <td>Reset both panes to root</td>
+        <td><kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+      </tr>
+      <tr>
+        <td>Reset active pane to root</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></td>
+      </tr>
+    </table>
+
+    <div class="small-note">
+      Active pane: white background. All operations act on it unless stated otherwise. [web:1][web:5]
+    </div>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="card">
+    <h2>Selection, Move & Sort</h2>
+    <table>
+      <tr><th style="width:58%">Action</th><th>Shortcut</th></tr>
+      <tr>
+        <td>Select multiple items</td>
+        <td><kbd>Ctrl</kbd> + left‑click</td>
+      </tr>
+      <tr>
+        <td>Add to selection (up/down)</td>
+        <td><kbd>Ctrl</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd></td>
+      </tr>
+      <tr>
+        <td>Remove from selection (up/down)</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>↑</kbd>/<kbd>↓</kbd></td>
+      </tr>
+      <tr>
+        <td>Select all editable entries</td>
+        <td><kbd>Ctrl</kbd> + <kbd>A</kbd></td>
+      </tr>
+      <tr>
+        <td>Move selection to right pane</td>
+        <td><kbd>Ctrl</kbd> + <kbd>→</kbd></td>
+      </tr>
+      <tr>
+        <td>Move selection to left pane</td>
+        <td><kbd>Ctrl</kbd> + <kbd>←</kbd></td>
+      </tr>
+      <tr>
+        <td>Duplicate selection to other pane</td>
+        <td><kbd>Ctrl</kbd> + <kbd>U</kbd></td>
+      </tr>
+      <tr>
+        <td>Move items to top / bottom</td>
+        <td><kbd>Alt</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></td>
+      </tr>
+      <tr>
+        <td>Move items up / down</td>
+        <td><kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd></td>
+      </tr>
+      <tr>
+        <td>Sort A → Z</td>
+        <td><kbd>Ctrl</kbd> + <kbd>J</kbd></td>
+      </tr>
+      <tr>
+        <td>Sort Z → A</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd></td>
+      </tr>
+      <tr>
+        <td>Custom sort / reverse custom</td>
+        <td><kbd>Alt</kbd> + <kbd>J</kbd> / <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd></td>
+      </tr>
+    </table>
+
+    <h2 style="margin-top:6px;">Clipboard & Export</h2>
+    <table>
+      <tr><th style="width:58%">Action</th><th>Shortcut</th></tr>
+      <tr>
+        <td>Copy links to clipboard</td>
+        <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+      </tr>
+      <tr>
+        <td>Copy titles to clipboard</td>
+        <td><kbd>Ctrl</kbd> + <kbd>X</kbd></td>
+      </tr>
+      <tr>
+        <td>Copy bookmark IDs to clipboard</td>
+        <td><kbd>Ctrl</kbd> + <kbd>I</kbd></td>
+      </tr>
+      <tr>
+        <td>Export selected to clipboard (JSON)</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td>
+      </tr>
+      <tr>
+        <td>Export selected to JSON file</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd></td>
+      </tr>
+      <tr>
+        <td>Import from clipboard</td>
+        <td><kbd>Ctrl</kbd> + <kbd>P</kbd></td>
+      </tr>
+    </table>
+    <div class="small-note">
+      Transfer between browsers: export with <kbd>Ctrl</kbd>+<kbd>Y</kbd> on source, import with <kbd>Ctrl</kbd>+<kbd>P</kbd> on target. [web:1]
+    </div>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="card">
+    <h2>Create, Edit, Sync & Search</h2>
+    <table>
+      <tr><th style="width:58%">Action</th><th>Shortcut</th></tr>
+      <tr>
+        <td>New bookmark</td>
+        <td><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+      </tr>
+      <tr>
+        <td>New folder</td>
+        <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+      </tr>
+      <tr>
+        <td>Edit title</td>
+        <td><kbd>Ctrl</kbd> + <kbd>T</kbd></td>
+      </tr>
+      <tr>
+        <td>Edit URL</td>
+        <td><kbd>Ctrl</kbd> + <kbd>L</kbd></td>
+      </tr>
+      <tr>
+        <td>Delete selected item(s)</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Delete</kbd></td>
+      </tr>
+      <tr>
+        <td>Mirror inactive pane to active folder</td>
+        <td><kbd>Ctrl</kbd> + <kbd>M</kbd></td>
+      </tr>
+      <tr>
+        <td>Mirror inactive pane to selected folder</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></td>
+      </tr>
+      <tr>
+        <td>Open selected path in opposite pane</td>
+        <td><kbd>Alt</kbd> + <kbd>M</kbd></td>
+      </tr>
+      <tr>
+        <td>Open selected path in current pane</td>
+        <td><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd></td>
+      </tr>
+      <tr>
+        <td>Sync two panes (bookmarks only)</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td>
+      </tr>
+      <tr>
+        <td>Search bookmarks</td>
+        <td><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+      </tr>
+      <tr>
+        <td>Find duplicated bookmarks</td>
+        <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></td>
+      </tr>
+    </table>
+    <div class="small-note">
+      Duplicates: use <code>duplicates</code> keyword in search bar to list duplicates in current folder + subfolders. [web:1]
+    </div>
+
+    <h2 style="margin-top:6px;">Configuration</h2>
+    <table>
+      <tr><th style="width:58%">Action</th><th>Shortcut</th></tr>
+      <tr>
+        <td>Open configuration / command panel</td>
+        <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+      </tr>
+    </table>
+    <div class="small-note">
+      From configuration you can change font size, font family, theme (dark/light/OS), and toolbar icon color; you can also toggle single/dual‑pane layout from the command prompt. [web:1][web:5]
+    </div>
+
+    <h2 style="margin-top:6px;">Interface Mode (Browser)</h2>
+    <ul>
+      <li>Right‑click toolbar icon → choose Tab / Window / Popup.</li>
+      <li>Assign a global shortcut in <code>chrome://extensions/shortcuts</code> (or your browser’s equivalent) to open the commander quickly. [web:5]</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
