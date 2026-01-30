@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Programme de marche – 65 ans et plus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+      --card: #f9fafb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 48px 24px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 18px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 14px 12px;
+      vertical-align: top;
+    }
+
+    thead th {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      border-bottom: 2px solid var(--border);
+    }
+
+    tbody tr:not(:last-child) td {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .week {
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .hint {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .accent {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    @media print {
+
+
+      @page {
+        page-size: letter;
+        margin: 1cm;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      header {
+        margin: 0;
+      }
+
+      .card {
+        page-break-inside: avoid;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Programme de marche</h1>
+      <p class="subtitle">
+        Plan de 8 semaines pour personnes de <strong>65 ans et plus</strong>, conçu pour
+        développer l’endurance, favoriser la perte de poids et rester sécuritaire pour les articulations.
+      </p>
+
+    </header>
+    <section class="card">
+      <h2>Objectif général</h2>
+      <p>
+        Atteindre progressivement environ <span class="accent">150 minutes de marche par semaine</span>,
+        en alternant marche confortable et marche plus soutenue, sans douleur ni épuisement.
+      </p>
+    </section>
+    <section class="card">
+      <h2>Bonne pratique</h2>
+      <p><strong>Chaussures :</strong> confortables, bon support, semelles adéquates<br>
+        <strong>Terrain :</strong> trottoir, piste, sentier — commencer plat avant de monter des pentes<br>
+        <strong>Hydratation :</strong> boire de l’eau avant/après (pas besoin de grandes quantités si marche modérée)<br>
+        <strong>Échauffement &amp; retour au calme :</strong> marcher lentement 3–5 min avant/ après<br>
+        <strong>Écouter son corps :</strong> un peu de fatigue est normal; douleur persistante n’est pas normale
+      </p>
+    </section>
+    <section class="card">
+      <h2>Varier pour brûler plus</h2>
+      <p>Sans complexifier :</p>
+      <ul>
+        <li>Augmenter la <strong>vitesse</strong> sur certaines marches</li>
+        <li>Marcher <strong>en pente</strong> ou utiliser des collines</li>
+        <li>Ajouter des <strong>bâtons de marche</strong> pour engager le haut du corps</li>
+        <li>Garder un <strong>journal simple</strong> : date, durée, allure perçue (facile/modérée)</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>À propos de la perte de poids</h2>
+      <p>La marche aide à créer un <strong>déficit calorique</strong>, mais le poids dépend aussi de l’alimentation et d’autres facteurs (métabolisme, santé générale). Une règle simple :</p>
+      <ul>
+        <li>Bouger plus + manger légèrement moins calorique (et nutritif) = perte de poids.</li>
+      </ul>
+    </section>
+    <section class="card">
+      <h2>Plan progressif sur 8 semaines</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Semaine</th>
+            <th>Fréquence</th>
+            <th>Durée</th>
+            <th>Contenu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="week">1 – 2</td>
+            <td>5 jours / semaine</td>
+            <td>20 min</td>
+            <td>
+              Marche facile.<br />
+              Respiration confortable, conversation possible sans effort.
+            </td>
+          </tr>
+          <tr>
+            <td class="week">3 – 4</td>
+            <td>5 jours / semaine</td>
+            <td>25–30 min</td>
+            <td>
+              Marche modérée.<br />
+              Rythme plus actif, parler demande parfois une pause.
+            </td>
+          </tr>
+          <tr>
+            <td class="week">5 – 6</td>
+            <td>5 jours / semaine</td>
+            <td>30–35 min</td>
+            <td>
+              1 à 2 jours avec variations d’allure :
+              <ul>
+                <li>5 min lentes (échauffement)</li>
+                <li>10 min plus rapides</li>
+                <li>5 min lentes</li>
+                <li>5 min normales</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="week">7 – 8</td>
+            <td>5 à 6 jours / semaine</td>
+            <td>35–40 min</td>
+            <td>
+              2 jours avec variations d’allure :
+              <ul>
+                <li>5 min lentes</li>
+                <li>15 min rapides</li>
+                <li>5 min lentes</li>
+                <li>(optionnel) 5 min rapides</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="hint">
+        Astuce : ralentir ou raccourcir la marche si l’effort semble trop élevé. La constance est plus importante que la performance.
+      </p>
+    </section>
+  </div>
+</body>
+
+</html>
