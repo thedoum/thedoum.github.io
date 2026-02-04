@@ -2,7 +2,7 @@
 
 
 ## Dominique
-[Bookmarks Commander – Linux Shortcuts](Bookmarks Commander – Linux Shortcuts.html)
+[Bookmarks Commander – Linux Shortcuts](./BookmarksCommanderLinuxShortcuts.html)
 
 ---
 ## Diane
