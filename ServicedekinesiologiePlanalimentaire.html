@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Plan alimentaire</title>
+
+<style>
+:root{
+  --text:#222;
+  --muted:#666;
+  --line:#ddd;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family: sans-serif;
+  color:var(--text);
+  margin:0;
+  background:#fafafa;
+}
+
+.page{
+  max-width: 850px;
+  margin:auto;
+  padding:48px 56px;
+  background:white;
+}
+
+h1{
+  font-size:1.9rem;
+  margin-bottom:4px;
+}
+
+h2{
+  font-size:1.1rem;
+  font-weight:600;
+  color:var(--muted);
+  margin-top:0;
+}
+
+h3{
+  margin-top:32px;
+  border-bottom:1px solid var(--line);
+  padding-bottom:4px;
+}
+
+.section{
+  margin-top:18px;
+}
+
+ul{
+  padding-left:20px;
+  margin-top:8px;
+}
+
+.checklist{
+  list-style:none;
+  padding-left:0;
+}
+
+.checklist li{
+  margin:6px 0;
+}
+
+input[type="checkbox"]{
+  transform:scale(1.1);
+  margin-right:8px;
+}
+
+.meal-block{
+  margin-top:10px;
+}
+
+.note{
+  margin-top:30px;
+  padding-top:10px;
+  border-top:1px solid var(--line);
+  font-weight:500;
+}
+
+.extra{
+  margin-top:20px;
+}
+
+.footer{
+  margin-top:40px;
+  font-size:0.95rem;
+  color:var(--muted);
+}
+
+/* impression */
+
+@media print {
+
+  body{
+    background:white;
+  }
+
+  .page{
+    padding:1.8cm;
+    box-shadow:none;
+  }
+
+  h1{
+    font-size:20pt;
+  }
+
+  h3{
+    page-break-after:avoid;
+  }
+
+  ul, li{
+    page-break-inside:avoid;
+  }
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<h1>Service de kinésiologie</h1>
+<h2>Plan alimentaire – 3 repas / 3 collations</h2>
+
+<h3>Déjeuner</h3>
+
+<div class="meal-block">
+<strong>Protéine (de votre choix)</strong>
+
+<ul class="checklist">
+<li><label><input type="checkbox">2 œufs complets</label></li>
+<li><label><input type="checkbox">3 blancs d'œuf</label></li>
+<li><label><input type="checkbox">1 œuf + 50 g de jambon sans nitrite</label></li>
+<li><label><input type="checkbox">125 g de saumon fumé</label></li>
+<li><label><input type="checkbox">125 g de saucisse sans gluten</label></li>
+<li><label><input type="checkbox">125 g de jambon sans nitrite</label></li>
+<li><label><input type="checkbox">1,5 scoop de protéine + lait d'amande ou eau</label></li>
+</ul>
+</div>
+
+<div class="meal-block">
+<strong>Accompagnement (de votre choix)</strong>
+
+<ul class="checklist">
+<li><label><input type="checkbox">1,5 tasse de fruits</label></li>
+<li><label><input type="checkbox">1 toast</label></li>
+<li><label><input type="checkbox">1 wrap</label></li>
+<li><label><input type="checkbox">0,5 tasse de gruau nature</label></li>
+<li><label><input type="checkbox">20 noix (7 variétés)</label></li>
+<li><label><input type="checkbox">0,5 avocat</label></li>
+<li><label><input type="checkbox">1 galette de riz + beurre de noix</label></li>
+<li><label><input type="checkbox">0,5 tasse de yogourt + fruits + graines (chanvre, chia, lin)</label></li>
+</ul>
+</div>
+
+<h3>Dîner</h3>
+
+<ul>
+<li>100 g de viande, poisson ou fruits de mer (au choix) + 1 cuillère d'huile d'olive ou beurre</li>
+<li>2 tasses de légumes minimum (cuits, crus, vapeur ou bouillis)</li>
+</ul>
+
+<h3>Souper</h3>
+
+<ul>
+<li>100 g de viande, poisson ou fruits de mer (au choix) + 1 cuillère d'huile d'olive ou beurre</li>
+<li>2 tasses de légumes minimum (cuits, crus, vapeur ou bouillis)</li>
+<li>0,5 tasse de féculent (riz, patate, patate douce, couscous, quinoa, légumineuses)</li>
+</ul>
+
+<h3>Collation (1 choix)</h3>
+
+<ul class="checklist">
+<li><label><input type="checkbox">20 noix (7 variétés)</label></li>
+<li><label><input type="checkbox">½ avocat</label></li>
+<li><label><input type="checkbox">Une poignée de graines de citrouille</label></li>
+<li><label><input type="checkbox">Une poignée de graines de tournesol</label></li>
+<li><label><input type="checkbox">Une galette de riz avec beurre de noix</label></li>
+<li><label><input type="checkbox">½ tasse de yogourt nature</label></li>
+<li><label><input type="checkbox">½ tasse de fromage feta</label></li>
+<li><label><input type="checkbox">½ tasse de fromage cottage</label></li>
+<li><label><input type="checkbox">40 g de fromage Allegro</label></li>
+<li><label><input type="checkbox">2 œufs</label></li>
+<li><label><input type="checkbox">50 g de viande (thon, viande séchée, viande froide sans nitrite)</label></li>
+<li><label><input type="checkbox">1 mesure de protéine iso ou végétale</label></li>
+</ul>
+
+<div class="note">
+Boire <strong>3 litres d'eau</strong> par jour
+</div>
+
+<div class="extra">
+<strong>Extras :</strong>
+<ul>
+<li>Cornichons, olives, cœurs de palmiers, cœurs d'artichaut</li>
+<li>Sauce à spag ou chili</li>
+</ul>
+</div>
+
+<div class="footer">
+Benjamin Vincelette<br>
+Kinésiologue
+</div>
+
+</div>
+
+</body>
+</html>
