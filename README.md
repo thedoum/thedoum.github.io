@@ -11,3 +11,5 @@
 [Service de kinésiologie Plan alimentaire (Vicky)](./planalimentairevicky.html)
 
 [Programme de Tai-Chi Yoga sur Chaise](./YogaSurChaise.html)
+
+[Instructions champignon arrosage des plantes](./instructions-champignon-arrosage.html)
